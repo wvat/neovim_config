@@ -10,6 +10,7 @@ vim.opt.shiftwidth = 4              -- insert 4 spaces on a tab
 vim.opt.expandtab = true            -- tabs are spaces, mainly because of python
 
 -- UI config
+vim.opt.wrap = true
 vim.opt.number = true               -- show absolute number
 vim.opt.relativenumber = false       -- add numbers to each line on the left side
 vim.opt.cursorline = true           -- highlight cursor line underneath the cursor horizontally
@@ -30,7 +31,7 @@ vim.g.airline_powerline_fonts = 1
 vim.cmd([[colorscheme dracula]])
 
 -- vimtex settings
-vim.g.vimtex_view_method = 'skim'  -- Change 'zathura' to your preferred PDF viewer
+vim.g.vimtex_view_method = 'skim'  -- Change 'skkim' to your preferred PDF viewer
 vim.g.vimtex_compiler_progname = 'nvr' -- Needed for callback to work in NeoVim
 vim.g.vimtex_quickfix_mode = 0 -- Change quickfix behaviorim.cmd([[colorscheme dracula]])
 
