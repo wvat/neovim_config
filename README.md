@@ -1,7 +1,7 @@
 ## Installation (MacOS)
 
 Requirements
-- Neovim
+- Neovim (v0.7.2 Recommended)
 - Skim
 - Mactex
 
