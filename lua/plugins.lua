@@ -15,6 +15,19 @@ local function setup_vim_plug()
     Plug 'tpope/vim-fugitive'
     Plug 'neovim/nvim-lspconfig'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    Plug 'neovim/nvim-lspconfig'
+    Plug 'williamboman/mason.nvim'
+    Plug 'williamboman/mason-lspconfig.nvim'
+    Plug 'hrsh7th/nvim-cmp'
+    Plug 'hrsh7th/cmp-buffer'
+    Plug 'hrsh7th/cmp-path'
+    Plug 'saadparwaiz1/cmp_luasnip'
+    Plug 'hrsh7th/cmp-nvim-lsp'
+    Plug 'hrsh7th/cmp-nvim-lua'
+    Plug 'L3MON4D3/LuaSnip'
+    Plug 'rafamadriz/friendly-snippets'
+    Plug 'VonHeikemen/lsp-zero.nvim'
+    Plug 'ThePrimeagen/vim-be-good'
     call plug#end()
   ]]
 end
