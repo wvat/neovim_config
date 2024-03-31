@@ -5,6 +5,10 @@ if vim.fn.empty(vim.fn.glob(data_dir .. '/autoload/plug.vim')) ~= 0 then
 	vim.api.nvim_command('autocmd VimEnter * PlugInstall --sync | source $MYVIMRC')
 end
 
+vim.g.mapleader = ","
+
 require('plugins')
 require('options')
+require('telescope')
 require('autocmd')
+require('keymaps')
