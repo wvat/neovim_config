@@ -1,4 +1,4 @@
-k## Installation (MacOS)
+## Installation (MacOS)
 
 Requirements
 - Neovim
