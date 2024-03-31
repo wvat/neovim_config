@@ -9,6 +9,7 @@ vim.g.mapleader = ","
 
 require('plugins')
 require('options')
+require('treesitter')
 require('telescope')
 require('autocmd')
 require('keymaps')

@@ -11,7 +11,10 @@ local function setup_vim_plug()
     Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.6' }
     Plug 'lervag/vimtex'
     Plug 'ThePrimeagen/harpoon', {'branch' : 'harpoon2'}
+    Plug 'mbbill/undotree'
+    Plug 'tpope/vim-fugitive'
     Plug 'neovim/nvim-lspconfig'
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     call plug#end()
   ]]
 end
