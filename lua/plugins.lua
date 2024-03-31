@@ -28,6 +28,8 @@ local function setup_vim_plug()
     Plug 'rafamadriz/friendly-snippets'
     Plug 'VonHeikemen/lsp-zero.nvim'
     Plug 'ThePrimeagen/vim-be-good'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'christoomey/vim-tmux-navigator'
     call plug#end()
   ]]
 end
