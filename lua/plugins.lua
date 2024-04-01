@@ -30,6 +30,7 @@ local function setup_vim_plug()
     Plug 'ThePrimeagen/vim-be-good'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'christoomey/vim-tmux-navigator'
+    Plug 'github/copilot.vim'
     call plug#end()
   ]]
 end
