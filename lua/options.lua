@@ -13,8 +13,8 @@ vim.opt.expandtab = true            -- tabs are spaces, mainly because of python
 vim.opt.wrap = true
 vim.opt.number = true               -- show absolute number
 vim.opt.relativenumber = true-- add numbers to each line on the left side
-vim.opt.cursorline = true           -- highlight cursor line underneath the cursor horizontally
-vim.opt.cursorcolumn = true
+vim.opt.cursorline = false -- highlight cursor line underneath the cursor horizontally
+vim.opt.cursorcolumn = false
 vim.opt.splitbelow = true           -- open new vertical split bottom
 vim.opt.splitright = true           -- open new horizontal splits right
 -- vim.opt.termguicolors = true        -- enabl 24-bit RGB color in the TUI
@@ -73,4 +73,4 @@ vim.cmd [[
   augroup END
 ]]
 
--- Additional settings can be added hereim.opt.smartcase = true            -- but make it case sensitive if an uppercase is entered
+-- Additional settings can be added hereim.opt.smartcase = true
