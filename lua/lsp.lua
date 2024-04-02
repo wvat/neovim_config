@@ -1,11 +1,22 @@
+require("mason").setup()
+require("mason-lspconfig").setup({
+    -- List of LSP servers to automatically install
+    ensure_installed = { "pyright", "rust_analyzer", "clangd", "texlab" },
+    automatic_installation = true, -- Automatically install LSPs if not present
+})
+
 local lsp = require('lsp-zero')
 
 lsp.preset('recommended')
 
 -- Setup your LSP servers as before
-lsp.configure('pyright', {
-  -- Your custom Pyright configuration here
-})
+--lsp.configure('pyright', {
+--})
+lspconfig = require('lspconfig')
+lspconfig.pyright.setup{}
+lspconfig.rust_analyzer.setup{}
+lspconfig.clangd.setup{}
+lspconfig.texlab.setup{}
 
 -- Setup nvim-cmp
 local cmp = require'cmp'
