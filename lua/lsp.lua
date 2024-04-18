@@ -32,7 +32,7 @@ cmp.setup({
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
     ['<C-Space>'] = cmp.mapping.complete(),
     ['<CR>'] = cmp.mapping.confirm({ select = true }),
-    ['<Tab>'] = cmp.mapping(function(fallback)
+    [vim.api.nvim_replace_termcodes("<leader><Tab>", true, true, true)] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_next_item()
       elseif require('luasnip').expand_or_jumpable() then
